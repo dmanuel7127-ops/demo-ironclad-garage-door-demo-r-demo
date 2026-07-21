@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ironclad Garage Door | Garage Door Repair & Installation</title>
+<meta name="description" content="Ironclad Garage Door — garage door repair and installation. Licensed, insured, easy to book online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+<style>
+  :root{
+    --bg:#0f1418; --bg-card:#171f26; --accent:#5c8ba3; --accent-2:#8fb8cc;
+    --text:#e9eff2; --text-muted:#96a7b2; --border:rgba(92,139,163,0.18);
+  }
+  html{scroll-behavior:smooth;}
+  body{background:var(--bg); color:var(--text); font-family:'Barlow',sans-serif;}
+  .font-display{font-family:'Barlow Condensed',sans-serif;}
+  .accent{color:var(--accent);}
+  .bg-accent{background:var(--accent);}
+  .border-hair{border-color:var(--border);}
+  @keyframes reveal-up{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+  .reveal{animation:reveal-up .7s ease-out both;}
+  .reveal-d1{animation-delay:.08s;} .reveal-d2{animation-delay:.16s;} .reveal-d3{animation-delay:.24s;} .reveal-d4{animation-delay:.32s;} .reveal-d5{animation-delay:.4s;} .reveal-d6{animation-delay:.48s;}
+  @media (prefers-reduced-motion: reduce){ .reveal{animation:none;opacity:1;transform:none;} }
+  .ticker-track{animation:ticker 28s linear infinite;}
+  @keyframes ticker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  input,select,textarea{background:#171f26;border:1px solid var(--border);color:var(--text);}
+  input::placeholder,textarea::placeholder{color:#657885;}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(92,139,163,0.18);}
+</style>
+</head>
+<body class="antialiased">
+
+<header class="sticky top-0 z-40 backdrop-blur bg-[#0f1418]/90 border-b border-hair">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#home" class="font-display text-2xl font-bold tracking-wide">IRONCLAD<span class="accent"> DOOR</span></a>
+    <nav class="hidden md:flex items-center gap-8 text-sm tracking-wide text-[var(--text-muted)]">
+      <a href="#services" class="hover:text-white transition-colors">Services</a>
+      <a href="#why" class="hover:text-white transition-colors">Why Us</a>
+      <a href="#reviews" class="hover:text-white transition-colors">Reviews</a>
+      <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="tel:+15555086217" class="hidden sm:inline-block text-sm font-semibold tracking-wide border border-hair rounded-full px-4 py-2 hover:border-[var(--accent)] transition-colors">Call (555) 508-6217</a>
+      <a href="#booking" class="bg-accent text-[#0f1418] font-bold text-sm rounded-full px-5 py-2.5 hover:brightness-110 transition cursor-pointer">Book Service</a>
+    </div>
+  </div>
+</header>
+
+<section id="home" class="relative overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="https://images.pexels.com/photos/8985457/pexels-photo-8985457.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Garage door repair technician at work" class="w-full h-full object-cover opacity-40">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0f1418]/70 via-[#0f1418]/80 to-[#0f1418]"></div>
+  </div>
+  <div class="relative max-w-6xl mx-auto px-6 pt-20 pb-28">
+    <div class="reveal flex items-center gap-2 text-sm text-[var(--text-muted)] mb-6">
+      <span class="flex text-[var(--accent-2)]">★★★★★</span>
+      <span>4.8 Google rating · ['Spring snapped on a Sunday and they had someone out same day. Fair price too.', 'New insulated door installed in under three hours, looks and runs great.', 'Opener kept failing and they diagnosed it in minutes, no upsell, just fixed it.'] verified reviews</span>
+    </div>
+    <h1 class="reveal reveal-d1 font-display font-extrabold leading-[0.95] text-5xl sm:text-7xl mb-6">
+      YOUR GARAGE DOOR, <span class="accent italic">FIXED FAST.</span><br>BACK IN ACTION.
+    </h1>
+    <p class="reveal reveal-d2 max-w-xl text-lg text-[var(--text-muted)] mb-8">
+      Same-day garage door repair, spring replacement, and new installations from a licensed local crew. Upfront pricing, no house call fee for repairs.
+    </p>
+    <div class="reveal reveal-d3 flex flex-wrap gap-4">
+      <a href="#booking" class="bg-accent text-[#0f1418] font-bold rounded-full px-7 py-3.5 hover:brightness-110 transition cursor-pointer">Book Service Online</a>
+      <a href="tel:+15555086217" class="border border-hair rounded-full px-7 py-3.5 font-semibold hover:border-[var(--accent)] transition cursor-pointer">Call (555) 508-6217</a>
+    </div>
+    <div class="reveal reveal-d4 grid grid-cols-3 gap-6 mt-14 max-w-lg">
+      <div><div class="font-display text-3xl font-bold accent">12+</div><div class="text-xs text-[var(--text-muted)] tracking-wide uppercase mt-1">Years Local</div></div>
+      <div><div class="font-display text-3xl font-bold accent">Same-Day</div><div class="text-xs text-[var(--text-muted)] tracking-wide uppercase mt-1">Repair Available</div></div>
+      <div><div class="font-display text-3xl font-bold accent">A+</div><div class="text-xs text-[var(--text-muted)] tracking-wide uppercase mt-1">BBB Rating</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="border-y border-hair bg-[#131a1f] py-3 overflow-hidden">
+  <div class="ticker-track flex gap-10 whitespace-nowrap text-xs tracking-widest uppercase text-[var(--text-muted)]" style="width:max-content;">
+    <span>Licensed &amp; Insured</span><span class="accent">◆</span><span>Same-Day Repairs</span><span class="accent">◆</span><span>No House Call Fee</span><span class="accent">◆</span><span>Satisfaction Guarantee</span><span class="accent">◆</span><span>Licensed &amp; Insured</span><span class="accent">◆</span><span>Same-Day Repairs</span><span class="accent">◆</span><span>No House Call Fee</span><span class="accent">◆</span><span>Satisfaction Guarantee</span><span class="accent">◆</span>
+  </div>
+</div>
+
+<section id="services" class="max-w-6xl mx-auto px-6 py-24">
+  <div class="reveal mb-14">
+    <span class="text-xs tracking-[0.2em] uppercase accent">— Services</span>
+    <h2 class="font-display font-bold text-4xl sm:text-5xl mt-3">REPAIR, REPLACE,<br>OR INSTALL.</h2>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="reveal bg-[var(--bg-card)] border border-hair rounded-2xl p-6">
+      <h3 class="font-display font-bold text-xl mb-3">Repairs</h3>
+      <ul class="space-y-2 text-sm text-[var(--text-muted)]"><li class="flex gap-3"><svg class="w-5 h-5 accent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Spring &amp; cable replacement</li><li class="flex gap-3"><svg class="w-5 h-5 accent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Off-track door fixes</li><li class="flex gap-3"><svg class="w-5 h-5 accent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Sensor &amp; opener issues</li></ul>
+    </div><div class="reveal bg-[var(--bg-card)] border border-hair rounded-2xl p-6">
+      <h3 class="font-display font-bold text-xl mb-3">New Installation</h3>
+      <ul class="space-y-2 text-sm text-[var(--text-muted)]"><li class="flex gap-3"><svg class="w-5 h-5 accent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Full door replacement</li><li class="flex gap-3"><svg class="w-5 h-5 accent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Insulated door upgrades</li><li class="flex gap-3"><svg class="w-5 h-5 accent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Custom sizing</li></ul>
+    </div><div class="reveal bg-[var(--bg-card)] border border-hair rounded-2xl p-6">
+      <h3 class="font-display font-bold text-xl mb-3">Openers</h3>
+      <ul class="space-y-2 text-sm text-[var(--text-muted)]"><li class="flex gap-3"><svg class="w-5 h-5 accent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Opener installation</li><li class="flex gap-3"><svg class="w-5 h-5 accent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Remote &amp; keypad setup</li><li class="flex gap-3"><svg class="w-5 h-5 accent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Smart opener upgrades</li></ul>
+    </div><div class="reveal bg-[var(--bg-card)] border border-hair rounded-2xl p-6">
+      <h3 class="font-display font-bold text-xl mb-3">Maintenance</h3>
+      <ul class="space-y-2 text-sm text-[var(--text-muted)]"><li class="flex gap-3"><svg class="w-5 h-5 accent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Annual tune-up</li><li class="flex gap-3"><svg class="w-5 h-5 accent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Roller &amp; track lubrication</li><li class="flex gap-3"><svg class="w-5 h-5 accent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Safety inspection</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="max-w-6xl mx-auto px-6 py-24 border-t border-hair">
+  <div class="reveal mb-14">
+    <span class="text-xs tracking-[0.2em] uppercase accent">— Why IRONCLAD</span>
+    <h2 class="font-display font-bold text-4xl sm:text-5xl mt-3">HOMEOWNERS TRUST US<br>FOR A REASON.</h2>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="reveal reveal-d1"><div class="font-display text-xl font-bold mb-2">01 &nbsp;Same-Day Repairs</div><p class="text-sm text-[var(--text-muted)]">Most repair calls handled the same day you call.</p></div><div class="reveal reveal-d2"><div class="font-display text-xl font-bold mb-2">02 &nbsp;No House Call Fee</div><p class="text-sm text-[var(--text-muted)]">You only pay for the actual repair, not a visit charge.</p></div><div class="reveal reveal-d3"><div class="font-display text-xl font-bold mb-2">03 &nbsp;Upfront Flat Pricing</div><p class="text-sm text-[var(--text-muted)]">Quoted before we start. No surprise fees.</p></div><div class="reveal reveal-d4"><div class="font-display text-xl font-bold mb-2">04 &nbsp;Satisfaction Guarantee</div><p class="text-sm text-[var(--text-muted)]">Not happy with the repair? We'll make it right, free.</p></div>
+  </div>
+</section>
+
+<section id="reviews" class="max-w-6xl mx-auto px-6 py-24 border-t border-hair">
+  <div class="reveal mb-14">
+    <span class="text-xs tracking-[0.2em] uppercase accent">— What Customers Say</span>
+    <h2 class="font-display font-bold text-4xl sm:text-5xl mt-3">4.8 ★ ACROSS ['Spring snapped on a Sunday and they had someone out same day. Fair price too.', 'New insulated door installed in under three hours, looks and runs great.', 'Opener kept failing and they diagnosed it in minutes, no upsell, just fixed it.'] REVIEWS</h2>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="reveal reveal-d1 bg-[var(--bg-card)] border border-hair rounded-2xl p-6">
+      <div class="text-[var(--accent-2)] mb-3">★★★★★</div>
+      <p class="text-sm text-[var(--text-muted)] mb-4">"Spring snapped on a Sunday and they had someone out same day. Fair price too."</p>
+      <div class="text-sm font-semibold">Sample Customer <span class="text-[var(--text-muted)] font-normal">· Demo review</span></div>
+    </div><div class="reveal reveal-d2 bg-[var(--bg-card)] border border-hair rounded-2xl p-6">
+      <div class="text-[var(--accent-2)] mb-3">★★★★★</div>
+      <p class="text-sm text-[var(--text-muted)] mb-4">"New insulated door installed in under three hours, looks and runs great."</p>
+      <div class="text-sm font-semibold">Sample Customer <span class="text-[var(--text-muted)] font-normal">· Demo review</span></div>
+    </div><div class="reveal reveal-d3 bg-[var(--bg-card)] border border-hair rounded-2xl p-6">
+      <div class="text-[var(--accent-2)] mb-3">★★★★★</div>
+      <p class="text-sm text-[var(--text-muted)] mb-4">"Opener kept failing and they diagnosed it in minutes, no upsell, just fixed it."</p>
+      <div class="text-sm font-semibold">Sample Customer <span class="text-[var(--text-muted)] font-normal">· Demo review</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 py-24 border-t border-hair">
+  <div class="reveal mb-10">
+    <span class="text-xs tracking-[0.2em] uppercase accent">— Recent Work</span>
+    <h2 class="font-display font-bold text-4xl sm:text-5xl mt-3">ON THE JOB.</h2>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <img src="https://images.pexels.com/photos/6720498/pexels-photo-6720498.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Garage door repair in progress" class="reveal reveal-d1 rounded-xl object-cover h-48 w-full border border-hair hover:border-[var(--accent)] transition-colors"><img src="https://images.pexels.com/photos/8985665/pexels-photo-8985665.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Technician installing garage door" class="reveal reveal-d2 rounded-xl object-cover h-48 w-full border border-hair hover:border-[var(--accent)] transition-colors"><img src="https://images.pexels.com/photos/8985511/pexels-photo-8985511.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Garage door spring replacement" class="reveal reveal-d3 rounded-xl object-cover h-48 w-full border border-hair hover:border-[var(--accent)] transition-colors"><img src="https://images.pexels.com/photos/8985449/pexels-photo-8985449.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="New garage door installed" class="reveal reveal-d4 rounded-xl object-cover h-48 w-full border border-hair hover:border-[var(--accent)] transition-colors">
+  </div>
+</section>
+
+<section id="booking" class="max-w-6xl mx-auto px-6 py-24 border-t border-hair">
+  <div class="grid lg:grid-cols-5 gap-12">
+    <div class="lg:col-span-2 reveal">
+      <span class="text-xs tracking-[0.2em] uppercase accent">— Booking</span>
+      <h2 class="font-display font-bold text-4xl mt-3 mb-5">BOOK YOUR<br>SERVICE ONLINE.</h2>
+      <p class="text-[var(--text-muted)] mb-6">Choose a service, share a few details, and request a time that works for you. We'll confirm within one business day.</p>
+      <ul class="space-y-3 text-sm text-[var(--text-muted)] mb-8">
+        <li class="flex gap-3"><svg class="w-5 h-5 accent shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Simple online request form</li>
+        <li class="flex gap-3"><svg class="w-5 h-5 accent shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Same-week availability, most areas</li>
+        <li class="flex gap-3"><svg class="w-5 h-5 accent shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Upfront, flat-rate pricing</li>
+      </ul>
+      <p class="text-sm text-[var(--text-muted)]">Prefer to talk? Call <a href="tel:+15555086217" class="accent font-semibold">(555) 508-6217</a>.</p>
+    </div>
+    <form class="lg:col-span-3 reveal reveal-d2 bg-[var(--bg-card)] border border-hair rounded-2xl p-8 grid sm:grid-cols-2 gap-5" onsubmit="return false;">
+      <div class="sm:col-span-2"><label class="block text-xs uppercase tracking-wide text-[var(--text-muted)] mb-2">Full Name</label><input type="text" placeholder="Jane Customer" class="w-full rounded-lg px-4 py-3 text-sm"></div>
+      <div><label class="block text-xs uppercase tracking-wide text-[var(--text-muted)] mb-2">Phone</label><input type="tel" placeholder="(555) 000-0000" class="w-full rounded-lg px-4 py-3 text-sm"></div>
+      <div><label class="block text-xs uppercase tracking-wide text-[var(--text-muted)] mb-2">Email</label><input type="email" placeholder="you@email.com" class="w-full rounded-lg px-4 py-3 text-sm"></div>
+      <div class="sm:col-span-2"><label class="block text-xs uppercase tracking-wide text-[var(--text-muted)] mb-2">Property Address</label><input type="text" placeholder="123 Main St" class="w-full rounded-lg px-4 py-3 text-sm"></div>
+      <div><label class="block text-xs uppercase tracking-wide text-[var(--text-muted)] mb-2">Preferred Date</label><input type="date" class="w-full rounded-lg px-4 py-3 text-sm"></div>
+      <div><label class="block text-xs uppercase tracking-wide text-[var(--text-muted)] mb-2">Preferred Time</label><select class="w-full rounded-lg px-4 py-3 text-sm"><option>Morning (8-11am)</option><option>Midday (11am-2pm)</option><option>Afternoon (2-5pm)</option></select></div>
+      <div class="sm:col-span-2"><label class="block text-xs uppercase tracking-wide text-[var(--text-muted)] mb-2">Service Type</label>
+        <select class="w-full rounded-lg px-4 py-3 text-sm">
+          <option>Spring / cable repair</option><option>Off-track door repair</option><option>Opener installation / repair</option><option>New door installation</option><option>Annual tune-up</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="sm:col-span-2"><label class="block text-xs uppercase tracking-wide text-[var(--text-muted)] mb-2">Notes (optional)</label><textarea rows="3" placeholder="Anything we should know before we arrive?" class="w-full rounded-lg px-4 py-3 text-sm"></textarea></div>
+      <button class="sm:col-span-2 bg-accent text-[#0f1418] font-bold rounded-full py-3.5 hover:brightness-110 transition cursor-pointer">Request Booking →</button>
+    </form>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 pb-24">
+  <div class="reveal border border-hair rounded-2xl p-3">
+    <iframe src="https://www.google.com/maps?q=Demo+City&output=embed" width="100%" height="320" style="border:0;border-radius:0.75rem;" loading="lazy"></iframe>
+  </div>
+</section>
+
+<section id="faq" class="max-w-6xl mx-auto px-6 py-24 border-t border-hair">
+  <div class="reveal mb-12">
+    <span class="text-xs tracking-[0.2em] uppercase accent">— FAQ</span>
+    <h2 class="font-display font-bold text-4xl sm:text-5xl mt-3">QUESTIONS, ANSWERED.</h2>
+  </div>
+  <div class="space-y-4 max-w-3xl">
+    <details class="reveal reveal-d1 border border-hair rounded-xl p-5 group"><summary class="cursor-pointer font-semibold list-none flex justify-between items-center">Do you charge a house call fee? <span class="accent group-open:rotate-45 transition-transform">+</span></summary><p class="text-sm text-[var(--text-muted)] mt-3">No — you only pay for the actual repair, not a visit charge.</p></details><details class="reveal reveal-d2 border border-hair rounded-xl p-5 group"><summary class="cursor-pointer font-semibold list-none flex justify-between items-center">Can you really fix it the same day? <span class="accent group-open:rotate-45 transition-transform">+</span></summary><p class="text-sm text-[var(--text-muted)] mt-3">Most repair calls are handled same-day, depending on parts needed.</p></details><details class="reveal reveal-d3 border border-hair rounded-xl p-5 group"><summary class="cursor-pointer font-semibold list-none flex justify-between items-center">Do you install new doors, not just repair? <span class="accent group-open:rotate-45 transition-transform">+</span></summary><p class="text-sm text-[var(--text-muted)] mt-3">Yes, full installation and insulated door upgrades are available.</p></details><details class="reveal reveal-d4 border border-hair rounded-xl p-5 group"><summary class="cursor-pointer font-semibold list-none flex justify-between items-center">Can I book online instead of calling? <span class="accent group-open:rotate-45 transition-transform">+</span></summary><p class="text-sm text-[var(--text-muted)] mt-3">Yes, use the booking form above 24/7 — we'll confirm within one business day.</p></details>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 pb-24">
+  <div class="reveal bg-[var(--bg-card)] border border-hair rounded-2xl px-8 py-14 text-center">
+    <h2 class="font-display font-bold text-3xl sm:text-4xl mb-4">Ready to get your garage door fixed?</h2>
+    <p class="text-[var(--text-muted)] mb-8">Book online or give us a call — most jobs scheduled within the week.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#booking" class="bg-accent text-[#0f1418] font-bold rounded-full px-7 py-3.5 hover:brightness-110 transition cursor-pointer">Book Service</a>
+      <a href="tel:+15555086217" class="border border-hair rounded-full px-7 py-3.5 font-semibold hover:border-[var(--accent)] transition cursor-pointer">Call (555) 508-6217</a>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-hair">
+  <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-[var(--text-muted)]">
+    <div>© 2026 Ironclad Garage Door — Demo site · Fictional business</div>
+    <div>Photos via <a href="https://www.pexels.com/@artempodrez" class="hover:accent underline">Pexels</a></div>
+  </div>
+</footer>
+
+<script>
+  try {
+    document.querySelectorAll('a.bg-accent, form button').forEach(el => {
+      el.addEventListener('mouseenter', () => { try { Motion.animate(el, {transform:['scale(1)','scale(1.03)']}, {duration:0.2}); } catch(e){} });
+      el.addEventListener('mouseleave', () => { try { Motion.animate(el, {transform:['scale(1.03)','scale(1)']}, {duration:0.2}); } catch(e){} });
+    });
+  } catch(e) {}
+</script>
+</body>
+</html>
